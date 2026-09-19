@@ -1,0 +1,79 @@
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio cache/options
+.vs/
+.vscode/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Local History for Visual Studio
+.localhistory/
+
+# Test results
+TestResults/
+*.trx
+*.coverage
+
+# Build artifacts
+*.dll
+*.exe
+*.pdb
+
+# Node/npm
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Docker
+.docker/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+appsettings.*.local.json
+
+# Terraform
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+terraform.tfvars.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
+
+# Database/Volumes
+postgres_data/
+
+# Generated
+publish/
+obj/

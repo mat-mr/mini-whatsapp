@@ -51,9 +51,9 @@ jobs:
           tags: |
             type=ref,event=branch
             type=sha,prefix={{branch}}-
-            type=raw,value=dev,enable={{is_push}}
-            type=sha,prefix=,enable={{is_push}}
-            type=raw,value=latest,enable={{is_push}},event=push,branch=main
+            type=raw,value=dev
+            type=sha,prefix=
+            type=raw,value=latest,enable=${{ github.ref == 'refs/heads/main' }}
 
       - uses: docker/build-push-action@v5
         with:

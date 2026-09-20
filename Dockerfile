@@ -3,6 +3,7 @@ FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 WORKDIR /src
 COPY ["Chat.sln", "."]
 COPY ["src/Chat.Api/Chat.Api.csproj", "src/Chat.Api/"]
+COPY ["tests/Chat.Api.Tests/Chat.Api.Tests.csproj", "tests/Chat.Api.Tests/"]
 RUN dotnet restore
 COPY . .
 WORKDIR "/src/src/Chat.Api"

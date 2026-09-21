@@ -1,0 +1,12 @@
+apiVersion: v2
+name: chat
+description: Mini WhatsApp chat application
+type: application
+version: 1.0.0
+appVersion: 1.0.0
+keywords:
+  - chat
+  - signalr
+  - kafka
+maintainers:
+  - name: Mini WhatsApp

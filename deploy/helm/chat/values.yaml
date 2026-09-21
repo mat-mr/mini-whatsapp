@@ -1,0 +1,39 @@
+replicaCount: 2
+
+image:
+  repository: ghcr.io/mat-mr/mini-whatsapp
+  pullPolicy: IfNotPresent
+  tag: latest
+
+service:
+  type: LoadBalancer
+  port: 80
+  targetPort: 8080
+
+ingress:
+  enabled: false
+
+resources:
+  requests:
+    cpu: 50m
+    memory: 128Mi
+  limits:
+    cpu: 100m
+    memory: 256Mi
+
+autoscaling:
+  enabled: false
+  minReplicas: 2
+  maxReplicas: 5
+  targetCPUUtilizationPercentage: 80
+
+postgresql:
+  host: postgres
+  port: 5432
+  database: chat
+  username: chat
+  password: chat
+
+kafka:
+  bootstrapServers: chat-kafka-kafka-bootstrap.kafka:9092
+  topic: chat-messages
